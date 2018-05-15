@@ -1,0 +1,25 @@
+define('SSO_DB_HOST', '/home/www/data/discourse-sso.sqlite');
+define('SSO_DB_USERNAME', '');
+define('SSO_DB_PASSWORD', '');
+define('SSO_DB_SCHEMA', '');
+define('SSO_DB_NONCE', 'sso_login');
+define('SSO_DB_TABLE', 'sso_user');
+
+define('SSO_URL_SITE', 'https://'.$_SERVER['HTTP_HOST']);
+define('SSO_URL_SCRIPT', '/' . basename(__FILE__));
+define('SSO_URL_DISCOURSE', 'https://forums.debiancn.org');
+// "sso secret" from Discourse admin panel
+// Good way to generate one on Linux: pwgen -syc
+define('SSO_SECRET', ')<c4ebB4 gl}5""AI q~3rR^Da a2]G;0P*');
+// Another secret used for sign local cookie
+define('SSO_LOCAL_SECRET', 'jdjebdj28djjdieksopapal');
+// Seconds before new nonce expire
+define('SSO_TIMEOUT', 120);
+// Seconds before SSO authentication expire
+define('SSO_EXPIRE', 3600);
+define('SSO_RENEW_EXPIRE', SSO_EXPIRE * 2);
+define('SSO_COOKIE', '__discourse_sso');
+define('SSO_COOKIE_DOMAIN', $_SERVER['HTTP_HOST']);
+define('SSO_COOKIE_SECURE', true);
+define('SSO_COOKIE_HTTPONLY', true);
+

@@ -1,4 +1,4 @@
-# Single file SSO client for [Discourse](https://github.com/discourse/discourse) in PHP
+# Single file SSO client for [Discourse](https://github.com/discourse/discourse) in PHP (w/ SQLite3)
 
 Usage how to on Discourse Meta:
 
